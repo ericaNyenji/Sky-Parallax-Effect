@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+
+    color: white;
+    overflow-x: hidden;
+}
+
+.background {
+    width: 100vw;
+    height: 200vh; 
+    position: relative;
+    overflow: hidden;
+}
+
+/*Blue Sky (Farthest, No movement) */
+.layer-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("https://res.cloudinary.com/dsnojght4/image/upload/v1738962839/sky_ctdyrc.jpg") no-repeat center center/cover;
+    z-index: 1; 
+}
+
+/* Birds */
+.layer-2 {
+    position: absolute;
+    bottom: 10;
+    right: 0;
+    width: 50%;
+    height: 50%;
+    background: url("https://res.cloudinary.com/dsnojght4/image/upload/v1738966581/biiiiiiiiiiirds-Photoroom_vq6bro.png") no-repeat center center/cover;
+    z-index: 2; 
+}
+
+/* Clouds */
+.layer-3 {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 80%;
+    height: 80%;
+    background: url("https://res.cloudinary.com/dsnojght4/image/upload/v1738963718/clo-Photoroom_rf50cw.png") repeat center center/contain;
+    z-index: 3;
+}
+
+/* Airplane (Closest) */
+.layer-4 {
+    position: absolute;
+    bottom: 20%;
+    left: 0%;
+    width: 800px;
+    height: 800px;
+    background: url("https://res.cloudinary.com/dsnojght4/image/upload/v1738962734/aaaa-Photoroom_l7lsml.png") no-repeat center center/contain;
+    z-index: 4;
+}
+
+
+
+.content {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    padding: 4rem;
+    background: url("https://res.cloudinary.com/dsnojght4/image/upload/v1738967303/Sky_Blue_selvpu.jpg") no-repeat center center;
+    background-size: cover; 
+    color: black;
+    text-align: center;
+}
